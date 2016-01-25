@@ -1,0 +1,26 @@
+/*
+
+A mixin is similar to a funchtion it has multiple declarations, as well as can take arguements.
+
+to declare a mixin 
+@mixin mixin-name
+to use a mixin @include mixin-name
+
+to use a mixin with arguemntes
+@include @arguement1, $arguesment2
+*/
+
+
+@mixin button($background, $font, $hover){
+	background-color: $background;
+	padding: .5em 1em;
+	color: $font;
+	border-radius: 3px;
+	margin: 1em;
+	display: inline-block;
+	text-decoration: none;
+	transition: all 150ms ease-in-out;
+	&:hover{
+		background-color: $hover;
+	}
+}

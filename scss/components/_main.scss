@@ -19,11 +19,19 @@ html{
 
 a{
 	text-decoration: none;
-	$: hover;
-		text-decoration: underline;
 	}
-
-
+// Mixins
+	.primary-btn{
+	@include button($primary, $white, darkblue);
+	}
+// Extend
 ul {
 	@extend .border;
+}
+
+div{
+	background: $grey;
+	&.border{
+
+	}
 }

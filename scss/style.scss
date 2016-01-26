@@ -10,5 +10,6 @@ _base scss contains all your variables (such as colour palates)
  
  @import 'base';
  @import 'mixins';
+ @import 'grid';
  
  @import 'components/main.scss';

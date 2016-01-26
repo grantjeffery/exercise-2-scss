@@ -27,11 +27,15 @@ a{
 // Extend
 ul {
 	@extend .border;
-}
+	}
 
 div{
 	background: $grey;
 	&.border{
+
+	}
+
+h1{ color: $grey;
 
 	}
 }
